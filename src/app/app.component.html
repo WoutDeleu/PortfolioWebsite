@@ -1,9 +1,20 @@
 <!-- Toolbar -->
+<div *ngIf="!production">
 <div class="topnav" role="banner">
-  <app-view-toggle/>
+  <title>Portfolio - Wout Deleu (under construction)</title>
+  <img
+    alt="Wout Deleu" src="./assets/images/Profile/professional.png" *ngIf="false"/>
+  <app-toggle-switch [isToggled]="terminalView" (toggleView)="terminalView=$event"/>
+  <app-navigation-bar *ngIf="!terminalView"/>
 </div>
 <main class="">
-  <img
-    alt="Wout Deleu" src="./assets/images/Profile/professional.png"/>
-  <p>test</p>
+  <div>
+    <app-over-view *ngIf="!terminalView"/>
+    <app-terminal-view *ngIf="terminalView"/>
+  </div>
+
 </main>
+</div>
+<div *ngIf="production">
+      <app-under-construction/>
+</div>
