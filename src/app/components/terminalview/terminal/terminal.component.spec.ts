@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TerminalViewComponent } from './terminal-view.component';
+import { TerminalviewComponent } from './terminal.component';
 
 describe('TerminalViewComponent', () => {
-  let component: TerminalViewComponent;
-  let fixture: ComponentFixture<TerminalViewComponent>;
+  let component: TerminalviewComponent;
+  let fixture: ComponentFixture<TerminalviewComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TerminalViewComponent]
+      declarations: [TerminalviewComponent]
     });
-    fixture = TestBed.createComponent(TerminalViewComponent);
+    fixture = TestBed.createComponent(TerminalviewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

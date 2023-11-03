@@ -2,19 +2,22 @@
 <div *ngIf="!production">
 <div class="topnav" role="banner">
   <title>Portfolio - Wout Deleu (under construction)</title>
-  <img
-    alt="Wout Deleu" src="./assets/images/Profile/professional.png" *ngIf="false"/>
+  <img class="profile"
+    alt="Wout Deleu" src="./assets/images/Profile/professional.png"/>
   <app-toggle-switch [isToggled]="terminalView" (toggleView)="terminalView=$event"/>
+  <app-download-cv-button/>
   <app-navigation-bar *ngIf="!terminalView"/>
 </div>
 <main class="">
   <div>
-    <app-over-view *ngIf="!terminalView"/>
-    <app-terminal-view *ngIf="terminalView"/>
+    <app-overview *ngIf="!terminalView" [person]="person"/>
+    <app-terminal *ngIf="terminalView" [person]="person"/>
   </div>
 
 </main>
 </div>
+
+<!--UNDER CONSTRUCITON-->
 <div *ngIf="production">
       <app-under-construction/>
 </div>

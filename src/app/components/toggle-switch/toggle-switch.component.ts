@@ -4,7 +4,7 @@ import {Component, OnInit, Input, Inject, EventEmitter, Output} from '@angular/c
 @Component({
   selector: 'app-toggle-switch',
   templateUrl: './toggle-switch.component.html',
-  styleUrls: ['./toggle-switch.component.css']
+  styleUrls: ['./toggle-switch.component.scss']
 })
 export class ToggleSwitchComponent implements OnInit {
   @Input() isToggled!: boolean; // Input om de stand van de toggle te beheren
