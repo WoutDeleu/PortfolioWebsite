@@ -1,0 +1,31 @@
+<section>
+  <div>
+    <form [formGroup]="form" (ngSubmit)="send($event)">
+      <h1>Angular Contact Form</h1>
+      <div>
+        <label for="name">Name</label>
+        <input formControlName="name" type="text" id="name" name="name"/>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input formControlName="email" type="email" id="email" name="email"/>
+      </div>
+      <div>
+        <input type="checkbox" id="allowedToCall" name="checkbox" value="1" (change)="toggle_disable_telnr()" checked="allowedToCall">
+        <label for="allowedToCall">Give me a call</label>
+        <input formControlName="telNr" type="tel" id="telNr" name="telNr"/>
+      </div>
+      <div>
+        <label for="subject">Subject</label>
+        <textarea formControlName="subject" id="subject" name="subject"></textarea>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea formControlName="message" id="message" name="message"></textarea>
+      </div>
+      <button>
+        Send
+      </button>
+    </form>
+  </div>
+</section>

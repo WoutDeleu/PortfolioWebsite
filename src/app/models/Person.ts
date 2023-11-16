@@ -1,12 +1,13 @@
 import {cities} from "country-cities";
-import {Skill} from "./Skill";
-import {Education} from "./Education";
-import {Certificate} from "./Certificate";
-import {Experience} from "./Experience";
-import {Project} from "./Project";
-import {Language} from "./Language";
-import {PersonJSON} from "./PersonJSON";
+import {Skill} from "./properties/Skill";
+import {Education} from "./events/Education";
+import {Certificate} from "./events/Certificate";
+import {Experience} from "./events/Experience";
+import {Project} from "./properties/Project";
+import {Language} from "./properties/Language";
+import {PersonJSON} from "./data/PersonJSON";
 import {parseMonthYearDayString, parseMonthYearString} from "../utils/DateFunctions";
+import {Event} from "./events/Event";
 
 export class Person {
   firstName: string;
@@ -83,5 +84,21 @@ export class Person {
     else {
       return [0,0];
     }
+  }
+
+  getTimeline() : Event[] {
+    let timeline = [];
+    timeline.push(...this.educations);
+    timeline.push(...this.certificates);
+    timeline.push(...this.experiences);
+    return timeline;
+  }
+
+  getAge(): number {
+    const today = new Date();
+    if (today.getMonth() < this.dateOfBirth.getMonth() || (today.getMonth() >= this.dateOfBirth.getMonth() && today.getDay() < this.dateOfBirth.getDay()-1)) {
+      return new Date().getFullYear() - this.dateOfBirth.getFullYear() - 1;
+    }
+    return new Date().getFullYear() - this.dateOfBirth.getFullYear();
   }
 }

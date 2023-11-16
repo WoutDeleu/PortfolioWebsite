@@ -7,9 +7,8 @@ export function parseMonthYearString(input: string) {
     'May', 'June', 'July', 'August',
     'September', 'October', 'November', 'December'
   ];
-  const index = months.findIndex(m => m === month);
+  const index= months.findIndex(m => m === month);
 
-  console.log(new Date(+year, index))
   return new Date(+year, index);
 }
 

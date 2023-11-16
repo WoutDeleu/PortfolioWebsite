@@ -8,11 +8,16 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {NgOptimizedImage} from "@angular/common";
 import { ToggleSwitchComponent } from './components/toggle-switch/toggle-switch.component';
 import { TerminalviewComponent } from './components/terminalview/terminal/terminal.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { UnderConstructionComponent } from './components/under-construction/under-construction.component';
-import { OverviewComponent } from './components/overview/overview/overview.component';
+import { OverviewComponent } from './components/overview/overview.component';
 import {DownloadCVButtonComponent} from "./components/download-cv-button/download-cv-button.component";
+import { AgeBadgeComponent } from './components/badges/age-badge/age-badge.component';
+import { SkillsComponent } from './components/cards/skills/skills.component';
+import { LocationBadgeComponent } from './components/badges/location-badge/location-badge.component';
+import {MatIconModule} from "@angular/material/icon";
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 @NgModule({
     declarations: [
@@ -25,6 +30,10 @@ import {DownloadCVButtonComponent} from "./components/download-cv-button/downloa
         UnderConstructionComponent,
         OverviewComponent,
         TerminalviewComponent,
+        AgeBadgeComponent,
+        SkillsComponent,
+        LocationBadgeComponent,
+        ContactFormComponent,
     ],
   imports: [
     BrowserModule,
@@ -33,7 +42,9 @@ import {DownloadCVButtonComponent} from "./components/download-cv-button/downloa
     MatSlideToggleModule,
     NgOptimizedImage,
     FormsModule,
-    DownloadCVButtonComponent
+    DownloadCVButtonComponent,
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

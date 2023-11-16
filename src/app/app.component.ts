@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import * as personData from './models/JohnDoe.json';
+import * as personData from './models/data/JohnDoe.json';
 import { environment } from "../environments/environment";
 import { Person } from "./models/Person";
-import {PersonJSON} from "./models/PersonJSON";
+import {PersonJSON} from "./models/data/PersonJSON";
 
 @Component({
   selector: 'app-root',

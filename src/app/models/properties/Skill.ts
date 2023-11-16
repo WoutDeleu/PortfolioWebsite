@@ -6,4 +6,8 @@ export class Skill {
     this.name = data.name;
     this.percentage = data.percentage;
   }
+
+  toString() : string {
+    return this.name + " (" + this.percentage + "%)";
+  }
 }

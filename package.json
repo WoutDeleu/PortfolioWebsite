@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "@emailjs/browser": "^3.11.0",
     "all-the-cities": "^3.1.0",
     "country-cities": "^1.0.8",
     "rxjs": "~7.8.0",

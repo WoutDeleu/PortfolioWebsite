@@ -7,7 +7,7 @@
   "function": "Full-stack Developer",
   "email": "john.doe@gmail.com",
   "phoneNumber": "+1 123 456 7890",
-  "dateOfBirth": "January 1, 1990",
+  "dateOfBirth": "December 13, 2001",
 
   "githubUrl": "https://github.com/johndoe",
   "linkedInUrl": "https://www.linkedin.com/in/johndoe",
@@ -62,7 +62,7 @@
       "description": "Certified in web development technologies.",
 
       "publisherName": "Code Institute",
-      "publisherPhoto": "certificate1.jpg",
+      "publisherPhoto": "https://picsum.photos/200/300",
       "publisherWebsite": "https://www.websolutions.com"
     },
     {
@@ -71,7 +71,7 @@
       "description": "Achieved JavaScript mastery certificate.",
 
       "publisherName": "Code Institute",
-      "publisherPhoto": "certificate1.jpg",
+      "publisherPhoto": "https://picsum.photos/200/300",
       "publisherWebsite": "https://www.websolutions.com"
     }
   ],
@@ -93,7 +93,7 @@
       },
 
       "companyName": "XYZ Retail",
-      "companyPhoto": "ecommerce.jpg",
+      "companyPhoto": "https://picsum.photos/200/300",
       "companyWebsite": "https://www.websolutions.com"
     },
     {
@@ -109,7 +109,7 @@
       },
 
       "companyName": "XYZ Retail",
-      "companyPhoto": "ecommerce.jpg",
+      "companyPhoto": "https://picsum.photos/200/300",
       "companyWebsite": "https://www.websolutions.com"
     }
   ],
@@ -135,7 +135,7 @@
       ],
 
       "companyName": "Tech Innovators Inc.",
-      "companyPhoto": "techinnovators.jpg",
+      "companyPhoto": "https://picsum.photos/200/300",
       "companyWebsite": "https://www.techinnovators.com"
     },
     {
@@ -151,7 +151,7 @@
         "MongoDB"
       ],
 
-      "companyPhoto": "websolutions.jpg",
+      "companyPhoto": "https://picsum.photos/200/300",
       "companyWebsite": "https://www.websolutions.com",
       "companyName": "Web Solutions Ltd."
     }
